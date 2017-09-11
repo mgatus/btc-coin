@@ -1,0 +1,370 @@
+$alpha : rgba(55, 97, 90, 0.61)
+$bluebutton : #0061c1
+$primecolor : #2b4153
+$secondcolor : #223442
+$menucolor : #222d32
+
+body
+  background-image: url('../img/blur-bg.jpg')
+  background-repeat: no-repeat !important
+  background-size: cover !important
+  background-origin: center !important
+  background-attachment: fixed !important
+  font-family: 'Open Sans', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.wrapper
+  overflow-y: hidden;
+
+.main-header .navbar .sidebar-toggle:hover
+  background-color: #75899a !important
+
+.content-header
+  padding: 15px 30px 0
+.content
+  padding: 15px 30px
+.content-wrapper, .right-side
+  z-index: 800
+  min-height: 100%
+  background-color: rgba(236, 240, 245, 0.62)
+  color: #fff
+  background-image: url('../img/blur-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-origin: center
+  background-attachment: fixed !important
+
+.logo
+  img
+    width: 22%
+    padding-right: 13px
+    @media screen and (max-width: 770px)
+      display: none
+
+.bluebutton,.btn-success
+  background: $bluebutton !important
+  border: none
+
+.signout
+  color: #fff
+  padding: 9px 15px 0 0
+  display: flex
+  justify-content: center
+  span
+    padding: 7px 0 0
+  a
+    color: #fff
+    .fa
+      font-size: 30px
+      margin-left: 15px
+
+.box
+  position: relative
+  width: 80%
+  margin-bottom: 20px
+  border-top: 0
+  border-radius: 8px
+  background: rgba(168, 168, 168, 0.07)
+  box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.27)
+  margin: 0 auto
+  padding: 0 15px 15px
+
+  .box-header
+    color: #fff
+    border-bottom: 1px solid #2c4148
+
+  .box-body
+    padding: 10px 30px
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+    border-bottom-right-radius: 3px
+    border-bottom-left-radius: 3px
+    border-top: 1px solid rgba(125, 125, 125, 0.43)
+
+  .box-header .box-title
+    padding: 15px 20px
+
+.dashboard .box
+  width: 100%
+
+.timeline > li > .timeline-item
+  border-top: 0
+  border-radius: 8px
+  background: rgba(168, 168, 168, 0.07)
+  box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.27)
+  max-width: 991px
+  > *
+    color : #fff
+  a
+    color : rgb(136, 215, 203) !important
+
+
+.box-tab
+  display: block
+  width: 80%
+  margin: 0 auto
+  border-radius: 8px
+  background: rgba(168, 168, 168, 0.07)
+  box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.27)
+
+.nav-tabs-custom
+  border-bottom: 1px solid #2c4148
+  background: transparent
+
+.nav-tabs-custom>.nav-tabs>li.active
+  border: none
+
+.nav-tabs-custom>.nav-tabs>li.active a
+  background: #121c23
+  color: #fff
+  border-color: transparent
+
+.nav-tabs-custom>.nav-tabs>li>a
+  color: #fff
+
+.tab-content > *
+  color : #fff !important
+
+.nav-tabs-custom>.nav-tabs
+  margin: 0
+  border-bottom-color: transparent
+  border-top-right-radius: 3px
+  border-top-left-radius: 3px
+
+.tab-content
+  box-shadow: none
+  .text-muted
+    color: #fff
+  i.fa
+    color: #000
+    padding-right: 8px
+
+  hr
+    border-color: transparent
+
+  .form-group label
+    float: left
+    width: 16.66666667%
+    text-align: right !important
+
+  input.form-control
+    width: 50%
+
+  .checkbox label
+    width: 100%
+    float: left
+    text-align: left !important
+
+
+.nav-tabs-custom>.tab-content
+  background: transparent
+
+.nav-tabs-custom>.nav-tabs>li
+  margin-bottom: -5px
+
+
+.box-footer
+  border-top: 0
+  border-radius: 8px
+  background: transparent
+  box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.27)
+
+.pagination > li > a
+  color: #666
+  background: transparent
+  border: 1px solid
+
+
+.form-control
+  outline: none
+  display: block
+  width: 100%
+  border: none
+  margin: 0 0 20px
+  padding: 10px 15px
+  box-sizing: border-box
+  border-radius: 6px
+  background: #31494e
+  outline: none
+  font-wieght: 400
+  -webkit-transition: 0.3s ease
+  transition: 0.3s ease
+  &:focus
+    border: none
+    color: #fff
+  &::placeholder
+    color: #fff
+
+.form-group label
+  width: 100%
+  float: left
+  padding-left: 19px
+  padding-bottom: 15px
+  text-align: left !important
+
+
+.small-box
+  padding: 10px
+  border-radius: 8px
+  background: rgba(83, 114, 119, 0.44) !important
+  box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.27)
+  min-height: 160px
+  .inner
+    padding: 10px
+    position: relative
+    left: 124px
+    @media screen and (max-width: 1400px)
+      width: 80px
+      left: 124px
+
+      p
+        font-size: 11px
+      h3
+        font-size: 20px
+
+    @media screen and (max-width: 770px)
+      left: 0
+      width: 80px
+      
+      p
+        font-size: 11px
+      h3
+        font-size: 20px
+
+  .icon
+    left: 30px
+    color: rgba(255, 255, 255, 0.44)
+    right: initial
+    top: 14px
+    border-right: 1px solid #2b3c45
+    padding: 0 15px 0 0
+  &:hover
+    .icon
+      font-size: 90px
+
+  .small-box-footer
+    display: none
+
+
+.products-list > .item
+  background: transparent
+
+.main-header
+  .navbar
+    background: $primecolor !important
+  .logo
+    background: $secondcolor !important
+
+.main-footer
+  background: transparent
+  color: #fff
+
+.form-group
+  text-align: center
+  margin-top: 15px
+  .checkbox-inline
+    margin-bottom: 15px
+
+.invest
+  .form-horizontal
+    input
+      width: 40%
+      float: left
+  .sidetitle
+    float: left
+    margin-left: 7px
+    margin-top: 7px
+
+.img-circle
+  max-width: 100%
+
+.user-panel img
+  max-width: 100%
+
+.green-success
+  color: #00a65a
+  float: left
+  margin: 7px 0 0 7px
+
+.modal
+  .info
+    margin: 0 auto
+    width: 60%
+    display: block
+    margin-bottom: 15px
+
+  .success-msg
+    color: grey
+    text-align: center
+    display: none
+
+  .ok-btn
+    display: none
+
+  .error
+    color: red
+    text-align: center
+
+  .qr
+    text-align: center
+    margin: 15px 0
+
+.error
+  color: red
+
+.reservation
+  text-align: left
+  position: relative
+  .input-group-addon
+    border: none
+    background: transparent
+    color: #fff
+    padding: 0
+    width: 100%
+    display: block
+  label
+    text-align: left
+    width: 100%
+    text-align: right
+    padding-left: 0
+  i
+    position: absolute
+    z-index: 999
+    right: 7px
+    top: 39px
+    font-size: 20px
+
+  .form-control, select
+    border-radius: 8px !important
+    width: 250px
+    color : #fff
+
+.connectedSortable
+  .nav-tabs-custom
+    padding: 0px 15px 15px
+    .btcwdgt
+      margin: 0 !important
+      max-width: none !important
+    .nav-tabs
+      border-bottom: 1px solid #d6d6d6
+      margin-bottom: 7px
+      li,li a
+        border-top: 0
+        border-right: 0
+        padding-bottom: 5px
+        font-size: 18px
+
+.table>tbody>tr>td,
+.table>tbody>tr>th
+  border: none !important
+
+.logos
+  margin:  auto
+  width: 80%
+  display: flex
+  justify-content: space-around
+
+  img
+    margin: 15px 0
+    text-align: center

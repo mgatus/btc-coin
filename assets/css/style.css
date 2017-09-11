@@ -1,0 +1,585 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+
+    background-image: url('../img/blur-bg.jpg');
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-origin: center !important;
+    background-size: cover !important;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper
+{
+    overflow-y: hidden;
+}
+
+.main-header .navbar .sidebar-toggle:hover
+{
+    background-color: #75899a !important;
+}
+
+.content-header
+{
+    padding: 15px 30px 0;
+}
+
+.content
+{
+    padding: 15px 30px;
+}
+
+.content-wrapper,
+.right-side
+{
+    z-index: 800;
+
+    min-height: 100%;
+
+    color: #fff;
+    background-color: rgba(236, 240, 245, .62);
+    background-image: url('../img/blur-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed !important; 
+    background-origin: center;
+    background-size: cover;
+}
+
+.logo img
+{
+    width: 22%;
+    padding-right: 13px;
+}
+@media screen and (max-width: 770px)
+{
+    .logo img
+    {
+        display: none;
+    }
+}
+
+.bluebutton,
+.btn-success
+{
+    border: none; 
+    background: #0061c1 !important;
+}
+
+.signout
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 9px 15px 0 0;
+
+    color: #fff;
+
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.signout span
+{
+    padding: 7px 0 0;
+}
+.signout a
+{
+    color: #fff;
+}
+.signout a .fa
+{
+    font-size: 30px;
+
+    margin-left: 15px;
+}
+
+.box
+{
+    position: relative;
+
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 15px 15px; 
+
+    border-top: 0;
+    border-radius: 8px;
+    background: rgba(168, 168, 168, .07);
+    box-shadow: 1px 1px 18px rgba(0, 0, 0, .27);
+}
+.box .box-header
+{
+    color: #fff;
+    border-bottom: 1px solid #2c4148;
+}
+.box .box-body
+{
+    padding: 10px 30px;
+
+    border-top: 1px solid rgba(125, 125, 125, .43); 
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.box .box-header .box-title
+{
+    padding: 15px 20px;
+}
+
+.dashboard .box
+{
+    width: 100%;
+}
+
+.timeline > li > .timeline-item
+{
+    max-width: 991px; 
+
+    border-top: 0;
+    border-radius: 8px;
+    background: rgba(168, 168, 168, .07);
+    box-shadow: 1px 1px 18px rgba(0, 0, 0, .27);
+}
+.timeline > li > .timeline-item > *
+{
+    color: #fff;
+}
+.timeline > li > .timeline-item a
+{
+    color: #88d7cb !important;
+}
+
+.box-tab
+{
+    display: block;
+
+    width: 80%;
+    margin: 0 auto;
+
+    border-radius: 8px;
+    background: rgba(168, 168, 168, .07);
+    box-shadow: 1px 1px 18px rgba(0, 0, 0, .27);
+}
+
+.nav-tabs-custom
+{
+    border-bottom: 1px solid #2c4148;
+    background: transparent;
+}
+
+.nav-tabs-custom > .nav-tabs > li.active
+{
+    border: none;
+}
+
+.nav-tabs-custom > .nav-tabs > li.active a
+{
+    color: #fff;
+    border-color: transparent; 
+    background: #121c23;
+}
+
+.nav-tabs-custom > .nav-tabs > li > a
+{
+    color: #fff;
+}
+
+.tab-content > *
+{
+    color: #fff !important;
+}
+
+.nav-tabs-custom > .nav-tabs
+{
+    margin: 0;
+
+    border-bottom-color: transparent;
+    border-top-left-radius: 3px; 
+    border-top-right-radius: 3px;
+}
+
+.tab-content
+{
+    box-shadow: none;
+}
+.tab-content .text-muted
+{
+    color: #fff;
+}
+.tab-content i.fa
+{
+    padding-right: 8px; 
+
+    color: #000;
+}
+.tab-content hr
+{
+    border-color: transparent;
+}
+.tab-content .form-group label
+{
+    float: left;
+
+    width: 16.66666667%;
+
+    text-align: right !important;
+}
+.tab-content input.form-control
+{
+    width: 50%;
+}
+.tab-content .checkbox label
+{
+    float: left;
+
+    width: 100%;
+
+    text-align: left !important;
+}
+
+.nav-tabs-custom > .tab-content
+{
+    background: transparent;
+}
+
+.nav-tabs-custom > .nav-tabs > li
+{
+    margin-bottom: -5px;
+}
+
+.box-footer
+{
+    border-top: 0;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: 1px 1px 18px rgba(0, 0, 0, .27);
+}
+
+.pagination > li > a
+{
+    color: #666;
+    border: 1px solid; 
+    background: transparent;
+}
+
+.form-control
+{
+    display: block;
+
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+
+    transition: .3s ease; 
+
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    outline: none;
+    background: #31494e;
+
+    font-wieght: 400;
+}
+.form-control:focus
+{
+    color: #fff; 
+    border: none;
+}
+.form-control::-webkit-input-placeholder
+{
+    color: #fff;
+}
+.form-control:-ms-input-placeholder
+{
+    color: #fff;
+}
+.form-control::placeholder
+{
+    color: #fff;
+}
+
+.form-group label
+{
+    float: left;
+
+    width: 100%;
+    padding-bottom: 15px;
+    padding-left: 19px;
+
+    text-align: left !important;
+}
+
+.small-box
+{
+    min-height: 160px; 
+    padding: 10px;
+
+    border-radius: 8px;
+    background: rgba(83, 114, 119, .44) !important;
+    box-shadow: 1px 1px 18px rgba(0, 0, 0, .27);
+}
+.small-box .inner
+{
+    position: relative;
+    left: 124px; 
+
+    padding: 10px;
+}
+@media screen and (max-width: 1400px)
+{
+    .small-box .inner
+    {
+        left: 124px; 
+
+        width: 80px;
+    }
+    .small-box .inner p
+    {
+        font-size: 11px;
+    }
+    .small-box .inner h3
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 770px)
+{
+    .small-box .inner
+    {
+        left: 0;
+
+        width: 80px;
+    }
+    .small-box .inner p
+    {
+        font-size: 11px;
+    }
+    .small-box .inner h3
+    {
+        font-size: 20px;
+    }
+}
+.small-box .icon
+{
+    top: 14px;
+    right: initial;
+    left: 30px;
+
+    padding: 0 15px 0 0; 
+
+    color: rgba(255, 255, 255, .44);
+    border-right: 1px solid #2b3c45;
+}
+.small-box:hover .icon
+{
+    font-size: 90px;
+}
+.small-box .small-box-footer
+{
+    display: none;
+}
+
+.products-list > .item
+{
+    background: transparent;
+}
+
+.main-header .navbar
+{
+    background: #2b4153 !important;
+}
+
+.main-header .logo
+{
+    background: #223442 !important;
+}
+
+.main-footer
+{
+    color: #fff; 
+    background: transparent;
+}
+
+.form-group
+{
+    margin-top: 15px; 
+
+    text-align: center;
+}
+.form-group .checkbox-inline
+{
+    margin-bottom: 15px;
+}
+
+.invest .form-horizontal input
+{
+    float: left; 
+
+    width: 40%;
+}
+
+.invest .sidetitle
+{
+    float: left;
+
+    margin-top: 7px; 
+    margin-left: 7px;
+}
+
+.img-circle
+{
+    max-width: 100%;
+}
+
+.user-panel img
+{
+    max-width: 100%;
+}
+
+.green-success
+{
+    float: left;
+
+    margin: 7px 0 0 7px; 
+
+    color: #00a65a;
+}
+
+.modal .info
+{
+    display: block;
+
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.modal .success-msg
+{
+    display: none; 
+
+    text-align: center;
+
+    color: grey;
+}
+
+.modal .ok-btn
+{
+    display: none;
+}
+
+.modal .error
+{
+    text-align: center; 
+
+    color: red;
+}
+
+.modal .qr
+{
+    margin: 15px 0; 
+
+    text-align: center;
+}
+
+.error
+{
+    color: red;
+}
+
+.reservation
+{
+    position: relative; 
+
+    text-align: left;
+}
+.reservation .input-group-addon
+{
+    display: block; 
+
+    width: 100%;
+    padding: 0;
+
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+.reservation label
+{
+    width: 100%;
+    padding-left: 0; 
+
+    text-align: left;
+    text-align: right;
+}
+.reservation i
+{
+    font-size: 20px; 
+
+    position: absolute;
+    z-index: 999;
+    top: 39px;
+    right: 7px;
+}
+.reservation .form-control,
+.reservation select
+{
+    width: 250px;
+
+    color: #fff; 
+    border-radius: 8px !important;
+}
+
+.connectedSortable .nav-tabs-custom
+{
+    padding: 0 15px 15px;
+}
+.connectedSortable .nav-tabs-custom .btcwdgt
+{
+    max-width: none !important; 
+    margin: 0 !important;
+}
+.connectedSortable .nav-tabs-custom .nav-tabs
+{
+    margin-bottom: 7px; 
+
+    border-bottom: 1px solid #d6d6d6;
+}
+.connectedSortable .nav-tabs-custom .nav-tabs li,
+.connectedSortable .nav-tabs-custom .nav-tabs li a
+{
+    font-size: 18px; 
+
+    padding-bottom: 5px;
+
+    border-top: 0;
+    border-right: 0;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th
+{
+    border: none !important;
+}
+
+.logos
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 80%;
+    margin: auto;
+
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.logos img
+{
+    margin: 15px 0;
+
+    text-align: center;
+}

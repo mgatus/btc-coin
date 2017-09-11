@@ -1,0 +1,389 @@
+body#login-page
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    height: 100vh; 
+
+    color: #666;
+    background-image: url('../img/blur-bg.jpg');
+    background-repeat: no-repeat;
+    background-origin: center;
+    background-size: cover;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Form Module */
+.form-module
+{
+    position: relative;
+
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    border: 5px solid rgba(255, 255, 255, .37);
+    border-top: 5px solid rgba(255, 255, 255, .37);
+    border-radius: 8px; 
+    background: rgba(255, 255, 255, .12);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+}
+.form-module .sign-in-icon
+{
+    position: relative; 
+
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.form-module .sign-in-icon .logo-container
+{
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+    margin-top: -60px;
+}
+.form-module .sign-in-icon .logo-container .logo
+{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    padding: 10px 7px;
+
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, .14);
+    background-size: cover;
+}
+.form-module .sign-in-icon .logo-container .logo img
+{
+    width: 85%;
+}
+.form-module .sign-in-icon .fa
+{
+    font-size: 40px;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+
+    color: #fff;
+    border-radius: 50%;
+    background: #2391c5;
+
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.form-module .toggle
+{
+    font-size: 12px;
+    line-height: 30px;
+
+    position: absolute;
+    top: -0;
+    right: -0;
+
+    width: 30px;
+    height: 30px;
+    margin: -5px 0 0;
+
+    cursor: pointer;
+    text-align: center; 
+
+    color: #fff;
+    background: #8798a1;
+}
+.form-module .toggle .tooltip
+{
+    font-size: 10px;
+    line-height: 1;
+
+    position: absolute;
+    top: 8px;
+    left: -102px;
+
+    display: block;
+
+    width: auto;
+    padding: 5px;
+
+    text-transform: uppercase; 
+
+    background: rgba(0, 0, 0, .6);
+}
+.form-module .toggle .tooltip:before
+{
+    position: absolute;
+    top: 5px;
+    right: -5px;
+
+    display: block;
+
+    content: '';
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid rgba(0, 0, 0, .6);
+}
+.form-module .form
+{
+    display: none;
+
+    padding: 5px 40px;
+}
+.form-module .form:nth-child(2)
+{
+    display: block;
+}
+.form-module h2
+{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1;
+
+    margin: 0 0 20px;
+    margin-bottom: 15px; 
+
+    text-align: center;
+
+    color: #fff;
+}
+.form-module h2 p
+{
+    font-size: 12px; 
+
+    margin-top: 15px;
+}
+.form-module input
+{
+    display: block;
+
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+
+    transition: .3s ease; 
+
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    outline: none;
+    background: rgba(55, 97, 90, .61);
+
+    font-wieght: 400;
+}
+.form-module input:focus
+{
+    color: #fff; 
+    border: none;
+}
+.form-module input::-webkit-input-placeholder
+{
+    color: #fff;
+}
+.form-module input:-ms-input-placeholder
+{
+    color: #fff;
+}
+.form-module input::placeholder
+{
+    color: #fff;
+}
+.form-module button
+{
+    width: 100%;
+    padding: 10px 15px;
+
+    cursor: pointer;
+    transition: .3s ease; 
+
+    color: #fff;
+    border: 0;
+    background: #0061c1;
+}
+.form-module button:hover
+{
+    background: #178ab4;
+}
+.form-module .cta
+{
+    font-size: 12px;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 40px;
+
+    text-align: center; 
+
+    color: #666;
+    background: transparent;
+}
+.form-module .cta a
+{
+    text-decoration: none; 
+
+    color: #fff;
+}
+
+.form-group
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.form-group label.checkbox-inline
+{
+    margin-top: 7px;
+}
+.form-group button
+{
+    width: 50%;
+}
+.form-group input[type='checkbox']
+{
+    float: left;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 7px 0 0;
+}
+.form-group span
+{
+    display: block;
+    float: left; 
+
+    margin-left: 28px;
+}
+
+.slogin
+{
+    width: 100%;
+    margin: 5% 0;
+    padding: 4%;
+
+    border: none; 
+    border-radius: 8px;
+}
+
+.bluebutton
+{
+    background: #0061c1 !important;
+}
+
+.input-holder
+{
+    position: relative;
+}
+.input-holder input
+{
+    padding-right: 35px;
+}
+.input-holder .fa
+{
+    font-size: 20px;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    color: #fff;
+}
+
+.g-recaptcha
+{
+    margin-bottom: 30px;
+}
+.g-recaptcha iframe
+{
+    width: 100% !important;
+}
+.g-recaptcha iframe div
+{
+    width: 100% !important;
+}
+
+.rc-anchor-normal
+{
+    color: #fff !important; 
+    border: 1px solid #d3d3d3 !important;
+    background: rgba(55, 97, 90, .61) !important;
+}
+
+@media screen and (max-height: 575px)
+{
+    #rc-imageselect,
+    .g-recaptcha
+    {
+        -webkit-transform: scale(.9);
+                transform: scale(.9);
+        -webkit-transform-origin: 0 0; 
+                transform-origin: 0 0;
+    }
+}
+
+.at-button
+{
+    position: fixed;
+    z-index: 10000000;
+    right: 24px;
+    bottom: 24px;
+
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+
+    animation: at-ripple .6s linear infinite; 
+
+    color: #666;
+    border-radius: 100%;
+    background: #fff;
+}
+.at-button:hover i
+{
+    transform: rotate(135deg);
+}
+.at-button i
+{
+    transition: .3s ease; 
+    transform: rotate(-45deg);
+}
+
+@keyframes at-ripple
+{
+    0%
+    {
+        box-shadow: 0 4px 10px rgba(102, 102, 102, .1), 0 0 0 0 rgba(102, 102, 102, .1), 0 0 0 5px rgba(102, 102, 102, .1), 0 0 0 10px rgba(102, 102, 102, .1);
+    }
+    100%
+    {
+        box-shadow: 0 4px 10px rgba(102, 102, 102, .1), 0 0 0 5px rgba(102, 102, 102, .1), 0 0 0 10px rgba(102, 102, 102, .1), 0 0 0 20px rgba(102, 102, 102, 0);
+    }
+}
